@@ -84,9 +84,11 @@ extension BLEModule: CBCentralManagerDelegate {
                       rssi RSSI: NSNumber) {
     discoveredPeripherals[peripheral.identifier] = peripheral
     
+    var peripheralName: String? = peripheral.name ?? advertisementData[CBAdvertisementDataLocalNameKey] as? String
+
     let peripheralData: [String: Any] = [
       "identifier": peripheral.identifier.uuidString,
-      "name": peripheral.name ?? "Unknown",
+      "name": peripheralName ?? "Unknown - no name",
       "rssi": RSSI,
       "advertisementData": advertisementData
     ]
