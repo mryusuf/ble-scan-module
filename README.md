@@ -1,50 +1,110 @@
-# Welcome to your Expo app 👋
+# BLE SCAN React Native Module
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This is a React Native Module that provides BLE devices scanning functionality on both iOS and Android.
+created with [`create-react-native-library`](https://www.npmjs.com/package/create-react-native-library).
 
 ## Get started
 
-1. Install dependencies
+To Integrate this module to your React Native Project
 
+1. Link the library at module/ble-scan based on your project setup
+ using `link:` protocol when using Yarn and `file:` when using npm
+   ```json
+   "dependencies": {
+      "react-native-ble-scan": "file:./modules/ble-scan"
+   }
+   ```  
+2. Run pod install --project-directory=ios to install dependencies with CocoaPods
+
+3. Setup Required Bluetooth Permissions on iOS. Add `NSBluetoothPeripheralUsageDescription` and optional `NSBluetoothAlwaysUsageDescription` on `ios/your-project/info.plist`
+
+  ```plist
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>This app requires Bluetooth access to search for BLE devices</string>
+	
+   <key>NSBluetoothAlwaysUsageDescription</key>
+	<string>This app requires Bluetooth access to search for BLE devices</string>
+</dict>
+  ```
+
+4. Setup required Bluetooth Permissions on Android. Call `requestBluetooth()` on your `onCreate` method in your `MainActivity` Classes. Alternatively, you can request permissions from your React Native code
+
+   ```kotlin
+    private val requestEnableBluetooth =
+        registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
+            if (result.resultCode == RESULT_OK) {
+
+            } else {
+                // denied
+            }
+        }
+
+    private val requestMultiplePermissions =
+        registerForActivityResult(ActivityResultContracts.RequestMultiplePermissions()) { permissions ->
+            permissions.entries.forEach {
+                Log.d("MyTag", "${it.key} = ${it.value}")
+            }
+        }
+
+    private fun requestBluetooth() {
+        // check android 12+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+            requestMultiplePermissions.launch(
+                arrayOf(
+                    Manifest.permission.BLUETOOTH_SCAN,
+                    Manifest.permission.BLUETOOTH_CONNECT,
+                )
+            )
+        } else {
+            val enableBtIntent = Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE)
+            requestEnableBluetooth.launch(enableBtIntent)
+            val enableCoarseLocationIntent = Intent(android.provider.Settings.ACTION_LOCATION_SOURCE_SETTINGS)
+            requestEnableBluetooth.launch(enableCoarseLocationIntent)
+        }
+    }
+   ```
+
+5. Run npx react-native run-android or npx react-native run-ios to build and run the app
+6. Import from react-native-ble-scan and use it in your app.
+   ```typescript
+   import BLEManager, { Peripheral } from 'react-native-ble-scan';
+   const scanStartSubscription = BLEManager.onScanStart(() => {});
+   ```
+7. Example code to access the Peripheral data using `useRef`
+   ```typescript
+   
+      const [peripherals, setPeripherals] = useState<Peripheral[]>([]);
+      const peripheralsRef = useRef<Peripheral[]>([]);
+      useEffect(() => {
+         peripheralsRef.current = peripherals;
+      }, [peripherals]);
+
+      const peripheralSubscription = BLEManager.onPeripheralFound((peripheral: Peripheral) => {
+         setPeripherals(prev => {
+            // Avoid duplicates by checking the identifier.
+            if (prev.find(p => p.identifier === peripheral.identifier)) {
+            return prev;
+            }
+            return [...prev, peripheral];
+         });
+      });
+   ```
+
+
+## Sample project
+
+You can run the sample project on the branch `sample-app` or go to `example` folder
+
+1. Checkout to `sample-app`
+   ```bash
+   git checkout sample-app
+   ```
+2. Setup expo project
    ```bash
    npm install
    ```
-
-2. Start the app
+3. Start the app
 
    ```bash
     npx expo start
    ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
