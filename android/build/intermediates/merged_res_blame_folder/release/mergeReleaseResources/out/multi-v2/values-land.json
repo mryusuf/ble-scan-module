@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.blescan.react-native-ble-scan-release-24:/values-land/values-land.xml",
+            "map": [
+                {
+                    "source": "/Users/yusufindra/.gradle/caches/8.10.2/transforms/aa2aaac3f4f6cbea9969e73fb7f16d32/transformed/appcompat-1.6.1/res/values-land/values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,125,196",
+                        "endColumns": "69,70,67",
+                        "endOffsets": "120,191,259"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "com.blescan.react-native-ble-scan-mergeReleaseResources-22:/values-land/values-land.xml",
+            "map": [
+                {
+                    "source": "/Users/yusufindra/.gradle/caches/8.10.2/transforms/aa2aaac3f4f6cbea9969e73fb7f16d32/transformed/appcompat-1.6.1/res/values-land/values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,125,196",
+                        "endColumns": "69,70,67",
+                        "endOffsets": "120,191,259"
+                    }
+                }
+            ]
+        }
+    ]
+}

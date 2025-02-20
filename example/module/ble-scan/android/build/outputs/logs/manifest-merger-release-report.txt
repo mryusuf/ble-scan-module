@@ -1,0 +1,44 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/yusufindra/Projects/ts/ble-bridge/node_modules/react-native-ble-scan/android/src/main/AndroidManifestNew.xml:1:1-27:12
+INJECTED from /Users/yusufindra/Projects/ts/ble-bridge/node_modules/react-native-ble-scan/android/src/main/AndroidManifestNew.xml:1:1-27:12
+	package
+		INJECTED from /Users/yusufindra/Projects/ts/ble-bridge/node_modules/react-native-ble-scan/android/src/main/AndroidManifestNew.xml
+	xmlns:android
+		ADDED from /Users/yusufindra/Projects/ts/ble-bridge/node_modules/react-native-ble-scan/android/src/main/AndroidManifestNew.xml:1:11-69
+uses-permission#android.permission.BLUETOOTH
+ADDED from /Users/yusufindra/Projects/ts/ble-bridge/node_modules/react-native-ble-scan/android/src/main/AndroidManifestNew.xml:3:5-4:54
+	android:maxSdkVersion
+		ADDED from /Users/yusufindra/Projects/ts/ble-bridge/node_modules/react-native-ble-scan/android/src/main/AndroidManifestNew.xml:4:25-51
+	android:name
+		ADDED from /Users/yusufindra/Projects/ts/ble-bridge/node_modules/react-native-ble-scan/android/src/main/AndroidManifestNew.xml:3:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from /Users/yusufindra/Projects/ts/ble-bridge/node_modules/react-native-ble-scan/android/src/main/AndroidManifestNew.xml:5:5-6:54
+	android:maxSdkVersion
+		ADDED from /Users/yusufindra/Projects/ts/ble-bridge/node_modules/react-native-ble-scan/android/src/main/AndroidManifestNew.xml:6:25-51
+	android:name
+		ADDED from /Users/yusufindra/Projects/ts/ble-bridge/node_modules/react-native-ble-scan/android/src/main/AndroidManifestNew.xml:5:22-71
+uses-permission#android.permission.BLUETOOTH_SCAN
+ADDED from /Users/yusufindra/Projects/ts/ble-bridge/node_modules/react-native-ble-scan/android/src/main/AndroidManifestNew.xml:13:5-73
+	android:name
+		ADDED from /Users/yusufindra/Projects/ts/ble-bridge/node_modules/react-native-ble-scan/android/src/main/AndroidManifestNew.xml:13:22-70
+uses-permission#android.permission.BLUETOOTH_ADVERTISE
+ADDED from /Users/yusufindra/Projects/ts/ble-bridge/node_modules/react-native-ble-scan/android/src/main/AndroidManifestNew.xml:17:5-78
+	android:name
+		ADDED from /Users/yusufindra/Projects/ts/ble-bridge/node_modules/react-native-ble-scan/android/src/main/AndroidManifestNew.xml:17:22-75
+uses-permission#android.permission.BLUETOOTH_CONNECT
+ADDED from /Users/yusufindra/Projects/ts/ble-bridge/node_modules/react-native-ble-scan/android/src/main/AndroidManifestNew.xml:21:5-76
+	android:name
+		ADDED from /Users/yusufindra/Projects/ts/ble-bridge/node_modules/react-native-ble-scan/android/src/main/AndroidManifestNew.xml:21:22-73
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/yusufindra/Projects/ts/ble-bridge/node_modules/react-native-ble-scan/android/src/main/AndroidManifestNew.xml:25:5-79
+	android:name
+		ADDED from /Users/yusufindra/Projects/ts/ble-bridge/node_modules/react-native-ble-scan/android/src/main/AndroidManifestNew.xml:25:22-76
+uses-sdk
+INJECTED from /Users/yusufindra/Projects/ts/ble-bridge/node_modules/react-native-ble-scan/android/src/main/AndroidManifestNew.xml reason: use-sdk injection requested
+INJECTED from /Users/yusufindra/Projects/ts/ble-bridge/node_modules/react-native-ble-scan/android/src/main/AndroidManifestNew.xml
+INJECTED from /Users/yusufindra/Projects/ts/ble-bridge/node_modules/react-native-ble-scan/android/src/main/AndroidManifestNew.xml
+	android:targetSdkVersion
+		INJECTED from /Users/yusufindra/Projects/ts/ble-bridge/node_modules/react-native-ble-scan/android/src/main/AndroidManifestNew.xml
+	android:minSdkVersion
+		INJECTED from /Users/yusufindra/Projects/ts/ble-bridge/node_modules/react-native-ble-scan/android/src/main/AndroidManifestNew.xml

@@ -7,7 +7,7 @@ created with [`create-react-native-library`](https://www.npmjs.com/package/creat
 
 To Integrate this module to your React Native Project
 
-1. Link the library at module/ble-scan based on your project setup
+1. Link the library at module/ble-scan based on your project setup. Copy all the folder (except `example`) to `modules/ble-scan`
  using `link:` protocol when using Yarn and `file:` when using npm
    ```json
    "dependencies": {
