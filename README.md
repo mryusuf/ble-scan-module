@@ -95,16 +95,18 @@ To Integrate this module to your React Native Project
 
 You can run the sample project on the branch `sample-app` or go to `example` folder
 
-1. Checkout to `sample-app`
+1. Open Example Folder or Checkout to `sample-app`
    ```bash
-   git checkout sample-app
+   cd example #or git checkout sample-app
    ```
 2. Setup expo project
    ```bash
    npm install
    ```
-3. Start the app
-
+3. Run the App (not using Expo Go). Make sure you use physical device. 
+   on iOS, setup the Team for signing on the Xcode, and then you can select your iOS devices as Xcode's Target and Run the project. 
    ```bash
-    npx expo start
+    npx expo run:ios #or npx expo run:android
+
+    open ios/blebridge.xcworkspace #setup Team signing and run on device from Xcode
    ```
