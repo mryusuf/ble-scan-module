@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.blescan.react-native-ble-scan-mergeReleaseResources-22:/values-watch-v20/values-watch-v20.xml",
+            "map": [
+                {
+                    "source": "/Users/yusufindra/.gradle/caches/8.10.2/transforms/aa2aaac3f4f6cbea9969e73fb7f16d32/transformed/appcompat-1.6.1/res/values-watch-v20/values-watch-v20.xml",
+                    "from": {
+                        "startLines": "2,5,8",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,214,385",
+                        "endLines": "4,7,10",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "209,380,553"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "com.blescan.react-native-ble-scan-release-24:/values-watch-v20/values-watch-v20.xml",
+            "map": [
+                {
+                    "source": "/Users/yusufindra/.gradle/caches/8.10.2/transforms/aa2aaac3f4f6cbea9969e73fb7f16d32/transformed/appcompat-1.6.1/res/values-watch-v20/values-watch-v20.xml",
+                    "from": {
+                        "startLines": "2,5,8",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,214,385",
+                        "endLines": "4,7,10",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "209,380,553"
+                    }
+                }
+            ]
+        }
+    ]
+}

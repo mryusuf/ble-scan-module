@@ -1,0 +1,26 @@
+<lint-module
+    format="1"
+    dir="/Users/yusufindra/Projects/ts/ble-bridge/node_modules/react-native-ble-scan/android"
+    name=":react-native-ble-scan"
+    type="LIBRARY"
+    maven="ble-bridge:react-native-ble-scan:unspecified"
+    agpVersion="8.6.0"
+    buildFolder="build"
+    bootClassPath="/Users/yusufindra/Library/Android/sdk/platforms/android-35/android.jar:/Users/yusufindra/Library/Android/sdk/build-tools/34.0.0/core-lambda-stubs.jar"
+    javaSourceLevel="17"
+    compileTarget="android-35"
+    neverShrinking="true">
+  <lintOptions
+      disable="GradleCompatible"
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true">
+    <severities>
+      <severity
+        id="GradleCompatible"
+        severity="IGNORE" />
+    </severities>
+  </lintOptions>
+  <variant name="release"/>
+</lint-module>

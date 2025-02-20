@@ -1,0 +1,54 @@
+[
+    {
+        "merged": "com.blescan.react-native-ble-scan-release-24:/color/switch_thumb_material_light.xml",
+        "source": "com.blescan.react-native-ble-scan-appcompat-1.6.1-15:/color/switch_thumb_material_light.xml"
+    },
+    {
+        "merged": "com.blescan.react-native-ble-scan-release-24:/color/abc_hint_foreground_material_light.xml",
+        "source": "com.blescan.react-native-ble-scan-appcompat-1.6.1-15:/color/abc_hint_foreground_material_light.xml"
+    },
+    {
+        "merged": "com.blescan.react-native-ble-scan-release-24:/color/abc_primary_text_disable_only_material_light.xml",
+        "source": "com.blescan.react-native-ble-scan-appcompat-1.6.1-15:/color/abc_primary_text_disable_only_material_light.xml"
+    },
+    {
+        "merged": "com.blescan.react-native-ble-scan-release-24:/color/switch_thumb_material_dark.xml",
+        "source": "com.blescan.react-native-ble-scan-appcompat-1.6.1-15:/color/switch_thumb_material_dark.xml"
+    },
+    {
+        "merged": "com.blescan.react-native-ble-scan-release-24:/color/abc_hint_foreground_material_dark.xml",
+        "source": "com.blescan.react-native-ble-scan-appcompat-1.6.1-15:/color/abc_hint_foreground_material_dark.xml"
+    },
+    {
+        "merged": "com.blescan.react-native-ble-scan-release-24:/color/abc_secondary_text_material_dark.xml",
+        "source": "com.blescan.react-native-ble-scan-appcompat-1.6.1-15:/color/abc_secondary_text_material_dark.xml"
+    },
+    {
+        "merged": "com.blescan.react-native-ble-scan-release-24:/color/abc_background_cache_hint_selector_material_light.xml",
+        "source": "com.blescan.react-native-ble-scan-appcompat-1.6.1-15:/color/abc_background_cache_hint_selector_material_light.xml"
+    },
+    {
+        "merged": "com.blescan.react-native-ble-scan-release-24:/color/abc_search_url_text.xml",
+        "source": "com.blescan.react-native-ble-scan-appcompat-1.6.1-15:/color/abc_search_url_text.xml"
+    },
+    {
+        "merged": "com.blescan.react-native-ble-scan-release-24:/color/abc_secondary_text_material_light.xml",
+        "source": "com.blescan.react-native-ble-scan-appcompat-1.6.1-15:/color/abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "com.blescan.react-native-ble-scan-release-24:/color/abc_primary_text_material_light.xml",
+        "source": "com.blescan.react-native-ble-scan-appcompat-1.6.1-15:/color/abc_primary_text_material_light.xml"
+    },
+    {
+        "merged": "com.blescan.react-native-ble-scan-release-24:/color/abc_primary_text_material_dark.xml",
+        "source": "com.blescan.react-native-ble-scan-appcompat-1.6.1-15:/color/abc_primary_text_material_dark.xml"
+    },
+    {
+        "merged": "com.blescan.react-native-ble-scan-release-24:/color/abc_background_cache_hint_selector_material_dark.xml",
+        "source": "com.blescan.react-native-ble-scan-appcompat-1.6.1-15:/color/abc_background_cache_hint_selector_material_dark.xml"
+    },
+    {
+        "merged": "com.blescan.react-native-ble-scan-release-24:/color/abc_primary_text_disable_only_material_dark.xml",
+        "source": "com.blescan.react-native-ble-scan-appcompat-1.6.1-15:/color/abc_primary_text_disable_only_material_dark.xml"
+    }
+]

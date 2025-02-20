@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.blescan.react-native-ble-scan-mergeReleaseResources-22:/values-v25/values-v25.xml",
+            "map": [
+                {
+                    "source": "/Users/yusufindra/.gradle/caches/8.10.2/transforms/aa2aaac3f4f6cbea9969e73fb7f16d32/transformed/appcompat-1.6.1/res/values-v25/values-v25.xml",
+                    "from": {
+                        "startLines": "2,3,4,6",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,126,209,308",
+                        "endLines": "2,3,5,7",
+                        "endColumns": "70,82,12,12",
+                        "endOffsets": "121,204,303,414"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "com.blescan.react-native-ble-scan-release-24:/values-v25/values-v25.xml",
+            "map": [
+                {
+                    "source": "/Users/yusufindra/.gradle/caches/8.10.2/transforms/aa2aaac3f4f6cbea9969e73fb7f16d32/transformed/appcompat-1.6.1/res/values-v25/values-v25.xml",
+                    "from": {
+                        "startLines": "2,3,4,6",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,126,209,308",
+                        "endLines": "2,3,5,7",
+                        "endColumns": "70,82,12,12",
+                        "endOffsets": "121,204,303,414"
+                    }
+                }
+            ]
+        }
+    ]
+}

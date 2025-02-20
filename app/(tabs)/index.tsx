@@ -5,7 +5,7 @@ import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 import { useEffect, useRef, useState } from 'react';
-import BLEManager, { Peripheral } from '../ble-module/ble-manager';
+import BLEManager, { Peripheral } from 'react-native-ble-scan';
 
 export default function HomeScreen() {
   const [peripherals, setPeripherals] = useState<Peripheral[]>([]);
